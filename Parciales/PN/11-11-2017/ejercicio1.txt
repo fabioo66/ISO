@@ -1,0 +1,3 @@
+1b_ No, porque todos los procesos llegaron a ejecutarse
+
+1c_ No, porque esto haria que hayan procesos aun con mayor prioridad

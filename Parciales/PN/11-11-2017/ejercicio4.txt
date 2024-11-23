@@ -1,0 +1,40 @@
+4a_ tamaño disco = #caras * #pistas cara * #sectores pista * tamaño sector
+
+Gib = Bytes/1024^3
+
+caras=8
+pista cara=2500
+sectores pista=63
+tamaño sector=4096
+
+tamaño = 8 * 2500 * 63 * 4096 = 5.160.960.000 Bytes = 4.806518555 Gibibytes
+
+b_ 
+Capacidad de 1 cara = 2500 * 63 * 4096 = 645.120.000Bytes
+
+1 Mebibytes = 1048576 Bytes
+
+1000 Mebibytes  = 1048576000 Bytes 
+
+Ocupacion = 1048576000 / 645120000 = 1.625396825396825 -> 2 caras
+
+c_ discor gira = 7200 RPM
+seek = 8,5 ms 
+velocidad de transferencia = 146 mebibytes/seg
+
+Latencia
+    7200 vueltas -> 1' = 60 s = 60000 ms
+    0,5 vueltas -> x = 4,1666 ms 
+
+Transferencia
+    146 Mebibytes -> 1 s = 1000 ms
+    4096 bytes -> x
+
+Unificamos unidades 
+    153092096 Bytes -> 1000 ms
+    4096 bytes -> 0,026755137
+
+Almacenamiento secuencial = seek + latency + tiempo transferencia bloque *
+#bloques
+
+Resultado = 8,5 ms + 4,1666 ms + 0,026755137 * 7000 = 1.885,52559 ms 
