@@ -1,0 +1,11 @@
+a_
+    espacio de direcciones virtuales de 32 bits
+    cada direccion referencia 2 bytes
+
+    2^32 * * 2 = 2^33 = 8589934592 bytes 
+
+b_ 
+    8589934592 bytes / 512 bytes = 16777216 paginas
+
+c_ 4 * 16777216 = 67108864
+

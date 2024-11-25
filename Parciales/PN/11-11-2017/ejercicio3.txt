@@ -1,0 +1,21 @@
+3_ 1 kbyte = 1024 bytes
+
+marco 4 = 0-1023 -> pagina 0
+marco 7 = 1024-2047 -> pagina 1
+marco 3 = 2048-3071 -> pagina 2
+marco 2 = 3072-4095 -> pagina 3
+marco 5 = 4096-5119 -> pagina 4
+marco 0 = 5120-6143 -> pagina 5 
+
+a_ No provoca fallo de pagina  
+    direccion logica = 1052 
+    numero de pagina = 1052 DIV 1024 = 1
+    desplazamiento = 1052 MOD 1024 = 28
+    direccion fisica = 1024 + 28 = 1052
+
+b_ 
+    numero de pagina = 2221 DIV 1024 = 2
+    desplazamiento = 2221 MOD 1024 = 173
+    direccion fisica = 2048 + 173 = 2221
+
+NO SE COMO SE HACE :C
