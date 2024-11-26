@@ -1,0 +1,35 @@
+12 caras
+1500 pistas por cara
+700 sectores
+256 bytes por sector 
+
+a_ Capacidad total del disco = 12 * 1500 * 700 * 256 = 3.225.600.000 bytes = 3.0040 Gibibytes
+
+b_ 1500 caras * 700 * 256 = 268800000 bytes
+
+1byte -> 2^20
+513Mib -> x = 537919488 bytes 
+
+537919488 bytes / 268800000 bytes = 0.200118 -> 3 caras 
+
+c_ disco gira a 126000 RPM 
+seek 2 ms 
+velocidad de transferencia de 15 mib/seg 
+
+latencia = 
+    12600 vueltas 
+    1 min -> 60 seg 60000 ms
+    0,5 vueltas -> x = 2,3809 ms
+
+transferencia = 
+    15 Mibits -> 1s -> 1000 ms
+    256 bytes -> x
+
+Unificamos unidades = 
+    15728640 bits -> 1000 ms 
+    2048 bits -> x = 0.1302 ms 
+
+ Almacenamiento secuencial:
+ seek + latency + tiempo transferencia bloque *
+ #bloques
+ 2 + 2,3809 + 0,1302 * 4500 = 590,2809 ms
